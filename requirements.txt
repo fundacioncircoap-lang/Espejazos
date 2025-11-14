@@ -1,0 +1,20 @@
+# --- Streamlit y App Principal ---
+streamlit
+pandas
+python-docx
+google-cloud-aiplatform
+Pillow
+openpyxl
+
+# --- Motor de Gráficos (graficos_plugins.py) ---
+numpy
+matplotlib
+matplotlib-venn
+networkx
+graphviz
+shapely
+langchain
+langchain-google-vertexai
+pywaffle
+seaborn
+pydot
