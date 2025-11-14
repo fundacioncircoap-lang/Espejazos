@@ -387,7 +387,7 @@ def crear_word(datos_editados, taxonomia_seleccionada, oportunidad_mejora):
     """
     try:
         # 1. Descargar la plantilla desde GCS
-        bucket_name = "bucket_espejos"
+        bucket_name = "bucket-espejos"
         template_name = "formato_limpio.docx"
         storage_client = storage.Client(project=GCP_PROJECT)
         bucket = storage_client.bucket(bucket_name)
@@ -487,7 +487,7 @@ def leer_excel_desde_gcs(bucket_name, file_path):
         return data
     except Exception as e:
         st.error(f"Error al leer Excel desde GCS: {e}")
-        st.info("Asegúrate de que la cuenta de servicio de Streamlit tenga permisos de 'Storage Object Viewer' en el bucket 'bucket_espejos'.")
+        st.info("Asegúrate de que la cuenta de servicio de Streamlit tenga permisos de 'Storage Object Viewer' en el bucket 'bucket-espejos'.")
         return None
 # --- FIN DE LA NUEVA FUNCIÓN ---
 
@@ -549,7 +549,7 @@ with col2:
     st.header("2. Configurar Generación")
     
     # --- MODIFICACIÓN: Cargar Excel desde GCS ---
-    bucket_name = "bucket_espejos"
+    bucket_name = "bucket-espejos"
     excel_file_path = "Estructura privados1.xlsx"
     
     # Intentamos cargar los datos desde GCS
