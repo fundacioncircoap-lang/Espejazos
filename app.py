@@ -529,7 +529,7 @@ def generar_oportunidad_mejora_llm(taxonomia_data, justificacion_clave):
 # --- 4. INTERFAZ DE STREAMLIT (UI) ---
 
 st.set_page_config(layout="wide")
-st.title("🤖 Generador de Ítemes (con Auditoría de IA)")
+st.title("🤖 Generador de Ítems espejo (con Auditoría de IA)")
 
 # --- Columnas para la entrada ---
 col1, col2 = st.columns(2)
